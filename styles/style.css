@@ -8,6 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 
 /* ---------- Header ---------- */
@@ -52,11 +53,11 @@ header button {
   background-color: hsl(212, 100%, 50%);
   color: white;
   border: none;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 header button:hover {
-    background-color: hsl(212, 100%, 60%);
+  background-color: hsl(212, 100%, 60%);
 }
 
 /* ---------- Main ---------- */
@@ -132,6 +133,8 @@ main p a:hover {
 
 /* ---------- Footer ---------- */
 footer {
+  position: fixed;
+  width: 100%;
   background-color: whitesmoke;
   color: dimgray;
   height: 11vh;
@@ -166,4 +169,49 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* ---------- Media queries ---------- */
+@media (max-width: 439px) {
+  footer {
+    top: 78vh;
+    height: 22vh;
+  }
+
+  footer p {
+    height: calc(100% / 4);
+  }
+  .ftr-links {
+    height: calc(100% * 3 / 4);
+    flex-direction: column;
+  }
+
+  .ftr-links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 670px) {
+  footer {
+    top: 83.5vh;
+    height: 16.5vh;
+  }
+
+  footer p {
+    height: calc(100% / 3);
+  }
+
+  .ftr-links {
+    height: calc(100% * 2 / 3);
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ftr-links {
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
 }
