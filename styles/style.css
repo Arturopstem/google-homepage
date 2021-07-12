@@ -56,5 +56,73 @@ span.account-circle:hover {
   background-color: silver;
   border-color: silver;
 }
+
 /* ---------- Main ---------- */
+main {
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  display: block;
+}
+
+main form {
+  width: 100%;
+}
+
+form input {
+  display: block;
+  width: 60%;
+  margin: 2rem auto;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 1px solid gainsboro;
+  font-size: 1rem;
+  padding-left: 2.5em;
+}
+form input:hover,
+form input:focus {
+  outline: none;
+  box-shadow: 1px 1.5px 3px gainsboro;
+  transform: scale(1.001, 1.001);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons button {
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  font-weight: 300;
+}
+
+.buttons button:hover {
+  border: 1px solid lightgray;
+  box-shadow: 0.25px 0.25px 2px gainsboro;
+}
+
+main p {
+  margin: 2rem auto;
+  font-size: 0.75rem;
+}
+
+main p a {
+  text-decoration: none;
+}
+
+main p a:hover {
+  text-decoration: underline;
+}
 /* ---------- Footer ---------- */
