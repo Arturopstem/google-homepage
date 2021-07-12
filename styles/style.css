@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---------- Header ---------- */
+header ul {
+  height: 7vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75em;
+  margin-right: 1em;
+}
+
+header a {
+  font-size: 0.75em;
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+span.apps {
+  cursor: pointer;
+  font-size: 24px;
+  color: gray;
+  border: 5px transparent solid;
+  border-radius: 50%;
+}
+
+span.apps:hover {
+  background-color: silver;
+  border-color: silver;
+}
+
+span.account-circle {
+  cursor: pointer;
+  font-size: 36px;
+  color: lightblue;
+  border: 2.5px transparent solid;
+  border-radius: 50%;
+}
+
+span.account-circle:hover {
+  background-color: silver;
+  border-color: silver;
+}
+/* ---------- Main ---------- */
+/* ---------- Footer ---------- */
