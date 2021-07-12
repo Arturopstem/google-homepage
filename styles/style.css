@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /* ---------- Header ---------- */
@@ -25,6 +25,7 @@ header a {
   font-size: 0.75em;
   text-decoration: none;
   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header a:hover {
@@ -59,7 +60,7 @@ span.account-circle:hover {
 
 /* ---------- Main ---------- */
 main {
-  height: 83vh;
+  height: 82vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,12 +78,13 @@ main form {
 form input {
   display: block;
   width: 60%;
-  margin: 2rem auto;
-  height: 3rem;
+  margin: 1.75rem auto;
+  height: 2.75rem;
   border-radius: 1.5rem;
   border: 1px solid gainsboro;
   font-size: 1rem;
   padding-left: 2.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 form input:hover,
 form input:focus {
@@ -99,13 +101,14 @@ form input:focus {
 
 .buttons button {
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   background-color: whitesmoke;
   color: black;
   padding: 0.5rem 1rem;
   border: 1px solid transparent;
   border-radius: 0.3rem;
-  font-weight: 300;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .buttons button:hover {
@@ -130,7 +133,7 @@ main p a:hover {
 footer{
     background-color: whitesmoke;
     color: dimgray;
-    height: 10vh;
+    height: 11vh;
     font-size: 0.9rem;
 }
 
